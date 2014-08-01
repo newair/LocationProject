@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+           
+            android:text="Location Getter"
+             />
+
+        <TableLayout
+            android:id="@+id/table"
+             android:layout_below="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                <TextView
+                    android:id="@+id/txtLongitude"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Longitude : " >
+                </TextView>
+                
+                 <TextView
+                    android:id="@+id/txtVal1"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " >
+                </TextView>
+			</TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+                  <TextView
+                    android:id="@+id/txtLatitude"
+                    android:layout_column="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Latitude : " >
+                </TextView>
+                
+                 <TextView
+                    android:id="@+id/txtVal2"
+                    android:layout_column="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" " >
+                </TextView>
+            </TableRow>
+
+           
+
+        </TableLayout>
+
+    </RelativeLayout>
+    
+    </LinearLayout>
+
